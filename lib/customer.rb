@@ -9,7 +9,7 @@ class Customer
   end
   
   def self.all
-    @all
+    @@all
   end
   
   def new_meal(waiter, total, tip=0)
