@@ -18,13 +18,13 @@ class Waiter
   
   def meals
     Meal.all.select do |meal|
-      meal. == self
+      meal.waiter == self
     end
   end
   
   def waiters
     meal.map do |meal|
-      meal.water
+      meal.waiter
     end
   end
   
